@@ -1,0 +1,85 @@
+
+
+fun main() {
+    var a = 40
+    println(a)
+    var `try` = 20
+    println(`try`)
+
+    // Val cannot be reassigned
+//    val b = 3
+//    print(b)
+//    b=a+b
+//    print(b)
+
+    //var a = 40
+    var b : String
+    println(a)
+
+    var message = "hello"
+    println(message)
+
+    val a1=10
+    val b1=20
+    var result="sum of $a1 and $b1 is ${a1+b1}"
+    println(result)
+
+    val letter:Char='A'
+    println("$letter")
+    print('\n')
+    println('\$')
+    println('\\')
+
+    val x:String="""reddy
+        |  reddy
+        |      reddy
+        |          reddy
+    """.trimMargin()
+    var y:String="""shiva
+        |shiva
+        |shiva
+        |shiva
+        |shiva
+    """.trimMargin()
+    println(y)
+    println(x)
+    var z="""    ram
+        |ram    ram
+        |   ram
+    """.trimMargin()
+    println(z)
+
+    //Arrays
+
+    val numbers = arrayOf(1,2,3,4,5)
+    val words:Array<String> = arrayOf("kotlin","python","java")
+    val squares =Array(5){i -> i*i}
+
+    val firstnum =numbers[0]
+    val secondword = words[1]
+
+    println("first number : $firstnum")
+    println("second word : $secondword")
+
+    //modifying array
+    numbers[0] = 10
+    words[1]="C language"
+
+    println("modified value: $firstnum")
+    println("modified 2nd  word : $secondword")
+
+    //println(numbers) //gives address
+    for (num in numbers){
+        println(num)
+    }
+
+    //Multi Dimensional array
+
+    var multiDarrray = arrayof((1,2,3),
+    (4,5,6),
+    (7,8,9))
+    
+
+
+
+}
